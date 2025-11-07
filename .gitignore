@@ -1,0 +1,41 @@
+# gradle
+.gradle/
+build/
+
+# idea
+out/
+*.ipr
+*.iws
+*.iml
+.idea/*
+!.idea/scopes
+
+# eclipse
+eclipse
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# vscode
+.settings/
+.vscode/
+.classpath
+.project
+
+# java
+hs_err_*.log
+replay_*.log
+*.hprof
+*.jfr
+
+# other
+run/
+runs/
+bin/
+classes/
+
+common/mocap-fabric.jar
+fabric/mocap-fabric.jar
+neoforge/mocap-neoforge.jar

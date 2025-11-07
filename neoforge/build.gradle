@@ -1,0 +1,41 @@
+plugins
+{
+	id "net.neoforged.moddev" version "${neoforge_moddev_version}"
+}
+
+repositories
+{
+	maven { url = "https://maven.kosmx.dev/" }
+	maven { url = "https://repo.redlance.org/public/" }
+}
+
+neoForge
+{
+	version = neoforge_version
+	parchment
+	{
+		minecraftVersion = parchment_minecraft
+		mappingsVersion = parchment_version
+	}
+
+	runs
+	{
+		client { client() }
+		server { server() }
+	}
+
+	dependencies
+	{
+		implementation("io.github.kosmx.emotes:emotesNeo:${emotecraft_version}")
+		{
+			exclude group: "com.google.guava", module: "guava"
+			exclude group: "net.fabricmc", module: "fabric-loader"
+		}
+		implementation files("mocap-neoforge.jar")
+	}
+
+	mods
+	{
+		"${mod_id}" { sourceSet sourceSets.main }
+	}
+}

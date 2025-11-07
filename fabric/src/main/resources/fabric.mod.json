@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "${mod_id}",
+	"version": "${version}",
+
+	"name": "${mod_name}",
+	"description": "${mod_description}",
+	"authors": ["${mod_author1}", "${mod_author2}"],
+	"contact":
+	{
+		"homepage": "${homepage}",
+		"sources": "${source_url}",
+		"issues": "${issue_tracker}"
+	},
+
+	"license": "${license}",
+	"icon": "logo.png",
+
+	"environment": "*",
+	"entrypoints":
+	{
+		"main": ["net.mt1006.mocapcomp.emotecraft.MocapEmotecraftCompModFabric"]
+	},
+	"mixins": ["mocapemotecraftcomp.mixins.json"],
+
+	"depends":
+	{
+		"minecraft": "${version_range_fabric}",
+		"fabricloader": ">=0.16.0",
+		"fabric-api": "*",
+		"java": ">=${java_version}",
+
+		"mocap": ">=1.4-alpha-8",
+		"emotecraft": "*"
+	}
+}

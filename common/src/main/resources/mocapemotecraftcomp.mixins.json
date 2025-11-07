@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "net.mt1006.mocapcomp.emotecraft.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins":
+	[
+		"PlayerListFields"
+	],
+	"injectors": { "defaultRequire": 1 }
+}
