@@ -9,6 +9,7 @@ repositories
 	maven { url = "https://maven.terraformersmc.com/releases/" }
 	maven { url = "https://maven.kosmx.dev/" }
 	maven { url = "https://repo.redlance.org/public/" }
+	maven { url = "https://api.modrinth.com/maven/" }
 }
 
 dependencies
@@ -22,7 +23,8 @@ dependencies
 	modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
 	modImplementation "io.github.kosmx.emotes:emotesFabric:${emotecraft_version}"
-	modImplementation files("mocap-fabric.jar")
+	modImplementation "maven.modrinth:motion-capture:${mocap_version}-fabric-${minecraft_version}"
+	//modImplementation files("mocap-fabric.jar")
 }
 
 loom

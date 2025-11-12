@@ -9,6 +9,7 @@ repositories
 	maven { url = "https://repo.spongepowered.org/repository/maven-public" }
 	maven { url = "https://maven.kosmx.dev/" }
 	maven { url = "https://repo.redlance.org/public/" }
+	maven { url = "https://api.modrinth.com/maven/" }
 }
 
 dependencies
@@ -20,8 +21,9 @@ dependencies
 	}
 
 	compileOnly "org.spongepowered:mixin:0.8.5:processor"
-	compileOnly "io.github.kosmx.emotes:emotesServer:${emotecraft_version}"
-	modCompileOnly files("mocap-fabric.jar")
+	modCompileOnly "io.github.kosmx.emotes:emotesServer:${emotecraft_version}"
+	modImplementation "maven.modrinth:motion-capture:${mocap_version}-fabric-${minecraft_version}"
+	//modCompileOnly files("mocap-fabric.jar")
 }
 
 loom
