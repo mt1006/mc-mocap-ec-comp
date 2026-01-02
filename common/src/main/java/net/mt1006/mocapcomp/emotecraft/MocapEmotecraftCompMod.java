@@ -23,7 +23,6 @@ public class MocapEmotecraftCompMod
 	public static final Logger LOGGER = LogManager.getLogger();
 	public static MocapExtension extension = null;
 
-	//TODO: update "homepage" in gradle.properties
 	public static void init()
 	{
 		MocapAPI.executeAfterInit(MocapEmotecraftCompMod::onMocapInit);
