@@ -1,6 +1,6 @@
 package net.mt1006.mocapcomp.emotecraft.actions;
 
-import com.zigythebird.playeranimcore.animation.Animation;
+import dev.kosmx.playerAnim.core.data.KeyframeAnimation;
 import io.github.kosmx.emotes.server.serializer.UniversalEmoteSerializer;
 import net.minecraft.server.level.ServerPlayer;
 import net.mt1006.mocap.api.v1.extension.MocapRecordingData;
@@ -14,11 +14,11 @@ import java.util.UUID;
 public class PlayEmoteAction implements MocapAction
 {
 	private final UUID uuid;
-	private final @Nullable Animation animation;
+	private final @Nullable KeyframeAnimation animation;
 
-	public PlayEmoteAction(Animation animation)
+	public PlayEmoteAction(KeyframeAnimation animation)
 	{
-		this.uuid = animation.uuid();
+		this.uuid = animation.getUuid();
 		this.animation = animation;
 	}
 

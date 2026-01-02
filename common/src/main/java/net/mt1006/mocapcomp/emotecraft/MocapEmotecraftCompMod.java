@@ -1,6 +1,6 @@
 package net.mt1006.mocapcomp.emotecraft;
 
-import com.zigythebird.playeranimcore.animation.Animation;
+import dev.kosmx.playerAnim.core.data.KeyframeAnimation;
 import io.github.kosmx.emotes.api.events.server.ServerEmoteAPI;
 import io.github.kosmx.emotes.api.events.server.ServerEmoteEvents;
 import net.minecraft.server.MinecraftServer;
@@ -44,7 +44,7 @@ public class MocapEmotecraftCompMod
 		ServerEmoteEvents.EMOTE_STOP_BY_USER.register(EmotecraftEvents::onEmoteStop);
 	}
 
-	public static void playEmote(MinecraftServer server, ServerPlayer player, @Nullable Animation animation)
+	public static void playEmote(MinecraftServer server, ServerPlayer player, @Nullable KeyframeAnimation animation)
 	{
 		Map<UUID, ServerPlayer> playerMap = ((PlayerListFields)server.getPlayerList()).getPlayersByUUID();
 		UUID playerUUID = player.getUUID();
