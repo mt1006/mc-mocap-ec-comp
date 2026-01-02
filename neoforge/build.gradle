@@ -27,11 +27,9 @@ neoForge
 
 	dependencies
 	{
-		implementation("io.github.kosmx.emotes:emotesNeo:${emotecraft_version}")
-		{
-			exclude group: "com.google.guava", module: "guava"
-			exclude group: "net.fabricmc", module: "fabric-loader"
-		}
+		compileOnly "io.github.kosmx.emotes:emotesServer:${emotecraft_version}"
+		implementation "maven.modrinth:emotecraft:${emotecraft_version}+${minecraft_version}-forge"
+		implementation "maven.modrinth:playeranimator:${player_animation_library_version}+${minecraft_version}-forge"
 		implementation "maven.modrinth:motion-capture:${mocap_version}-neoforge-${minecraft_version}"
 		//implementation files("mocap-neoforge.jar")
 	}

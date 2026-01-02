@@ -22,7 +22,10 @@ dependencies
 
 	modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
-	modImplementation "io.github.kosmx.emotes:emotesFabric:${emotecraft_version}"
+
+	modCompileOnly "io.github.kosmx.emotes:emotesServer:${emotecraft_version}"
+	modImplementation "maven.modrinth:emotecraft:${emotecraft_version}+${minecraft_version}-fabric"
+	modImplementation "maven.modrinth:playeranimator:${player_animation_library_version}+${minecraft_version}-fabric"
 	modImplementation "maven.modrinth:motion-capture:${mocap_version}-fabric-${minecraft_version}"
 	//modImplementation files("mocap-fabric.jar")
 }

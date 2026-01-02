@@ -8,7 +8,7 @@ import java.util.UUID;
 
 public class EmotecraftEvents
 {
-	public static void onEmotePlay(KeyframeAnimation animation, float tick, UUID playerUUID)
+	public static void onEmotePlay(KeyframeAnimation animation, UUID playerUUID)
 	{
 		if (MocapEmotecraftCompMod.extension.isRecordingActive())
 		{
