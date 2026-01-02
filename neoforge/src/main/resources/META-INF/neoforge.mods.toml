@@ -32,7 +32,7 @@ config="${mod_id}.mixins.json"
 [[dependencies.${mod_id}]]
 	modId="mocap"
 	type="required"
-	versionRange="[1.4-alpha-9,)"
+	versionRange="[1.4-alpha-10,)"
 	ordering="NONE"
 	side="BOTH"
 

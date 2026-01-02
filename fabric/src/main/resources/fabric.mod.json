@@ -30,7 +30,7 @@
 		"fabric-api": "*",
 		"java": ">=${java_version}",
 
-		"mocap": ">=1.4-alpha-9",
+		"mocap": ">=1.4-alpha-10",
 		"emotecraft": "*"
 	}
 }
